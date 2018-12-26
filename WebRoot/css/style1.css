@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Roboto:400,700');
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e1f5fe;
+  background-image: url('https://images.unsplash.com/photo-1513039306615-8f4f46ed16f0?auto=format&fit=crop&w=1500&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+canvas {
+	display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hiden;
+}
+#login-box h2{
+  margin: 0;
+  padding:0 0 20px;
+  color: #E1F5FE;
+  text-align: center;
+}
+#login-box p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #E1F5FE;
+}
+#login-box{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position:absolute;
+  width: 350px;
+  height: 420px;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+.profile{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: calc(-100px/2);
+  left: calc(50% - 50px);
+}
+#login-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+#login-box input[type="text"],
+#login-box input[type="password"]{
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #E1F5FE;
+  color: #E1F5FE;
+  background: transparent;
+}
+#login-box input[type="button"]{
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #E1F5FE;
+  background: rgba(3, 169, 244, 0.7);
+  transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+#login-box input[type="button"]:hover{
+  color: #E1F5FE;
+  background: rgba(255, 88, 29, 0.7);
+}
+::placeholder{
+  color: rgba(215,215,245,0.5);
+  font-size: 14px;
+}
+
+#login-box a{
+  color: #ff8c63;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#social-icons{
+  bottom: 2%;
+  left: 10%;
+  position: absolute;
+}
+#social-icons p{
+  margin: 10px 0;
+  color: #00f1ff;
+  font-size: 20px;
+  font-family: 'Krona One', sans-serif;
+}
+#social-icons a{
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 5px;
+  transition: 0.5s cubic-bezier(0.07, 0.56, 0.58, 1);
+  -webkit-transition: 0.5s cubic-bezier(0.07, 0.56, 0.58, 1);
+}
+#social-icons a:hover{
+  color: #ff4300;
+}
+.hire-me{
+  bottom: 4%;
+  right: 10%;
+  position: absolute;
+}
+.hire-me a{
+  color: #00f1ff;
+  font-size: 18px;
+  font-family: 'Krona One', sans-serif;
+  text-decoration: none;
+  transition: 0.5s cubic-bezier(0.07, 0.56, 0.58, 1);
+  -webkit-transition: 0.5s cubic-bezier(0.07, 0.56, 0.58, 1);
+}
+.hire-me a:hover{
+  color: #ff4300;
+  
+}
